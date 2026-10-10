@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prism/0 — 3D Playground</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <canvas id="webgl"></canvas>
+
+    <header class="hud hud--top">
+      <a class="logo" href="#" data-magnetic>PRISM<span>/0</span></a>
+      <span class="mono hide-sm">ISSUE NO. <b id="issue">00124</b></span>
+      <span class="mono hide-sm" id="chapter-label">00 — INTRO</span>
+      <nav class="mono">
+        <a href="/v1/" data-magnetic>v1</a>
+        <a href="#" data-magnetic data-pulse>Encode</a>
+        <a href="#" data-magnetic data-top>Top</a>
+      </nav>
+    </header>
+
+    <footer class="hud hud--bottom mono">
+      <span>SCROLL <b id="scroll-pct">000</b>%</span>
+      <span>LOOP <b id="loop">00</b></span>
+      <span class="hide-sm">FPS <b id="fps">60</b></span>
+      <span class="hide-sm">X <b id="mx">+0.00</b> Y <b id="my">+0.00</b></span>
+      <span class="scroll-cue">Scroll to continue ↓</span>
+    </footer>
+
+    <main id="content"></main>
+
+    <div class="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"></div></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
